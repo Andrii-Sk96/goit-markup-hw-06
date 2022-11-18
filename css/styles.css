@@ -7,6 +7,7 @@
   --primery-footer-contact: rgba(255, 255, 255, 0.6);
   --footer-background-color: #2f303a;
 }
+
 /* основиний колір тексту background: #757575;*/
 /*основний колір заголовок background: #212121;*/
 /*жругорядний колір фону #f5f5f5;*/
@@ -215,26 +216,37 @@ header {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
+  opacity: 1;
+  visibility: visible;
+
+  transition: opacity 250ms;
+
   z-index: 1;
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/*MODAL*/
 
 .modal {
   position: absolute;
 
   width: 528px;
   height: 581px;
+  padding: 40px;
 
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -260,6 +272,11 @@ header {
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+}
+
+.modal-form {
 }
 
 /*features*/
@@ -607,7 +624,6 @@ header {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 70px;
 }
 
 .social-list .social + .social {
@@ -627,7 +643,7 @@ header {
 
 .current::after {
   position: absolute;
-  bottom: 0px;
+  bottom: -1px;
   right: 0px;
   content: "";
   width: 100%;
@@ -722,7 +738,7 @@ header {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
 
-  transition-property: color, background-color;
+  transition-property: color, box-shadow, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -877,14 +893,9 @@ header {
   border-radius: 4px;
   cursor: pointer;
 
-  transition-property: color;
+  transition-property: color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers-icon:hover,
-.customers-icon:focus {
-  color: var(--accent-color);
 }
 
 .current-position::before {
@@ -904,3 +915,7 @@ header {
 }
 
 /**/
+
+textarea {
+  resize: none;
+}
