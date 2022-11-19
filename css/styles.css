@@ -272,6 +272,12 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
+<<<<<<< HEAD
+=======
+}
+
+.modal-form {
+>>>>>>> aee46af4aaa2f0d23b6f82370e3af5a47ceaf770
 }
 
 .button-backdrop-exite:hover {
@@ -1124,7 +1130,12 @@ margin-bottom: 20px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+<<<<<<< HEAD
 .current-position::before {}
+=======
+.current-position::before {
+}
+>>>>>>> aee46af4aaa2f0d23b6f82370e3af5a47ceaf770
 
 .customers-icon {
   fill: currentColor;
