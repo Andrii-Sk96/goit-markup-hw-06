@@ -272,13 +272,9 @@ header {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
-<<<<<<< HEAD
-=======
 }
 
-.modal-form {
->>>>>>> aee46af4aaa2f0d23b6f82370e3af5a47ceaf770
-}
+
 
 .button-backdrop-exite:hover {
   fill: var(--accent-color);
@@ -302,14 +298,6 @@ header {
 
   color: var(--title-text-color);
     
-}
-
-.modal-form {
-
-}
-
-.form-list {
-
 }
 
 .form-block{
@@ -393,9 +381,6 @@ color: var(--primary-text-color);
   margin-bottom: 4px;
 }
 
-.form-icon {
-  
-}
 
 .form-icon-position {
   position: absolute;
@@ -451,6 +436,7 @@ margin-bottom: 30px;
 
 .form-block-coment{
 position: relative;
+
 
 margin-bottom: 20px;
 }
@@ -566,8 +552,6 @@ margin-bottom: 20px;
 
   background: rgba(47, 48, 58, 0.8);
 }
-
-.hoby-backround-position {}
 
 /*team*/
 
@@ -1063,8 +1047,6 @@ margin-bottom: 20px;
   background: rgba(33, 150, 243, 0.9);
 }
 
-.portfolio-position-text:hover {}
-
 .portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1129,13 +1111,6 @@ margin-bottom: 20px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-<<<<<<< HEAD
-.current-position::before {}
-=======
-.current-position::before {
-}
->>>>>>> aee46af4aaa2f0d23b6f82370e3af5a47ceaf770
 
 .customers-icon {
   fill: currentColor;
