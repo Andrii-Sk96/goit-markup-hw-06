@@ -338,10 +338,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .form-input:hover ~ .form-icon-position,
 .form-input:focus ~ .form-icon-position {
 fill: var(--accent-color);
+
 }
 
-.form-input:hover{
+.form-input:hover,
+.form-input:focus{
   border-color: var(--accent-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  outline: var(--accent-color);
 }
 
 
@@ -438,8 +443,12 @@ font-family: 'Roboto';
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-textarea:hover{
+.form-textarea:hover,
+.form-textarea:focus{
 border-color: var(--accent-color);
+color: var(--accent-color);
+  border-color: var(--accent-color);
+  outline: var(--accent-color);
 }
 
 
@@ -840,7 +849,6 @@ margin-bottom: 20px;
 .div-social {
   display: flex;
   flex-direction: column;
-  width: 206px;
   margin-left: 70px;
 }
 
@@ -862,8 +870,6 @@ margin-bottom: 20px;
 
 .footer-form{
 display: flex;
-
-  margin-top: 10px;
 }
 
 .footer-subskribe-block {
@@ -901,8 +907,6 @@ margin-right: 12px;
 }
 
 .footer-button{
-margin-top: 36px;
-
   display: flex;
 
   width: 200px;
@@ -924,6 +928,8 @@ margin-top: 36px;
   color: var(--primery-white-color);
   border: none;
   
+  align-self: flex-end;
+
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
