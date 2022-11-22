@@ -84,13 +84,14 @@
                 <div class="form-list">
 
                   <div class="form-block">
+                    <label class="form-filed" for="user-name">Ім'я</label>
                     <input
                       class="form-input"
                       type="text"
                       name="name"
                       placeholder=" "
+                      id="user-name"
                     />
-                    <label class="form-filed" for="name">Ім'я</label>
                     <span class="form-icon-position"
                       ><svg class="form-icon" width="12" height="12">
                         <use
@@ -101,14 +102,14 @@
                   </div>
 
                   <div class="form-block">
+                    <label class="form-filed" for="user-tel">Телефон</label>
                     <input
                       class="form-input"
                       type="tel"
                       name="tel"
-                      id=""
+                      id="user-tel"
                       placeholder=" "
                     />
-                    <label class="form-filed">Телефон</label>
                     <span class="form-icon-position"
                       ><svg class="forl-icon" width="13" height="13">
                         <use
@@ -119,14 +120,14 @@
                   </div>
 
                   <div class="form-block">
+                    <label class="form-filed" for="user-mail">Пошта</label>
                     <input
                       class="form-input"
                       type="email"
                       name="mail"
-                      id=""
+                      id="user-mail"
                       placeholder=" "
                     />
-                    <label class="form-filed">Пошта</label>
                     <span class="form-icon-position"
                       ><svg class="form-icon" width="15" height="12">
                         <use
@@ -137,22 +138,25 @@
                   </div>
 
                   <div class="form-block-coment">
+                    <label class="form-filed">Коментар</label>
+
                     <textarea
                       class="form-textarea"
                       name="comment"
                       placeholder="Введіть текст">
                     </textarea>
-                    <label class="form-filed-coment">Коментар</label>
                   </div>
 
                   <div class="form-policy-position">
                     <label class="form-policy-label" for="consent">
                       <input
+                      class="form-chekbox"
                         type="checkbox"
                         value=""
                         name="consent"
                         id="consent"
                       />
+                      <span class="form-icon-span"></span>
                       <span class="form-policy">
                         Погоджуюся з розсилкою та приймаю
                         <a class="form-policy-link" href="#">Умови договору</a>
@@ -600,33 +604,32 @@
         </div>
 
         <div class="div-social footer-contein">
-          <p class="footer-title">Підпишіться на розсилку</p>
           <form class="footer-form" action="">
-            <div>
-              <label for=""> </label>
-              <input type="text" placeholder="E-mail" />
+            <div class="footer-subskribe-block">
+              <label class="footer-title" for="footeremail"
+                >Підпишіться на розсилку</label
+              >
+              <input
+                class="footer-subskribe-input"
+                type="text"
+                name="mail"
+                placeholder="E-mail"
+                id="footeremail"
+              />
             </div>
+            <button class="footer-button" type="submit">
+              Підписатися
+              <svg class="footer-svg-button" width="24px" height="24px">
+                <use
+                  href="./images/symbol-defs-good.svg#icon-paper-plane"
+                ></use>
+              </svg>
+            </button>
           </form>
-          <button class="footer-button" type="submit">
-            Підписатися
-            <svg class="footer-svg-button" width="24px" height="24px">
-              <use href="./images/symbol-defs-good.svg#icon-paper-plane"></use>
-            </svg>
-          </button>
         </div>
       </div>
-
-      <div class="footer-form">
-        <p class="footer-text-form">Підпишіться на розсилку</p>
-        <form action="">
-          <div>
-            <label for=""> </label>
-            <input type="text" placeholder="E-mail" />
-          </div>
-        </form>
-      </div>
     </footer>
-
+    
     <script src="./js/modal.js"></script>
   </body>
 </html>
